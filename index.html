@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-strength {
+    font-size: 14px;
+    color: #333;
+    display: none;
+}
+
+.password-label {
+    margin-top: 10px;
+    display: block;
+}
+
+.show-password {
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" action="home.html">
+            <h2>Login</h2>
+            <div class="input-container">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="password-strength" id="password-strength">Password Strength: <span></span></span>
+                <input type="checkbox" id="show-password" class="show-password">
+                <label for="show-password" class="password-label">Show Password</label>
+            </div>
+            <div class="input-container">
+                <label for="remember-me">
+                <input type="checkbox" id="remember-me" style="width: max-content;">
+                Remember Me</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+<script type="text/javascript">
+const passwordInput = document.getElementById("password");
+const passwordStrength = document.getElementById("password-strength");
+const showPasswordCheckbox = document.getElementById("show-password");
+const passwordLabel = document.querySelector(".password-label");
+passwordInput.addEventListener("input", () => {
+    const password = passwordInput.value;
+    const strength = calculatePasswordStrength(password);
+    passwordStrength.style.display = "block";
+    passwordStrength.querySelector("span").textContent = strength;
+});
+function calculatePasswordStrength(password) {
+    if (password.length < 8) {
+        return "Weak";
+    } else if (password.length < 12) {
+        return "Moderate";
+    } else {
+        return "Strong";
+    }
+}
+showPasswordCheckbox.addEventListener("change", () => {
+    passwordInput.type = showPasswordCheckbox.checked ? "text" : "password";
+    passwordLabel.textContent = showPasswordCheckbox.checked ? "Hide Password" : "Show Password";
+});
+</script>
+</body>
+</html>

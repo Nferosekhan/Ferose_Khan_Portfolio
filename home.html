@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: wheat;
+}
+
+.navbar ul li a:after{
+    content: '';
+    border: 1px solid yellow;
+    width: 100%;
+    display: inline-block;
+}
+
+.logo-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+    margin-top: 20px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -70px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn:active {
+    background-color: #003a75;
+    border-color: #003a75;
+}
+
+.highlight{
+text-transform: uppercase;
+animation: highlighted 3s linear infinite;
+text-shadow: 0px 2px limegreen;
+}
+
+@keyframes highlighted{
+0%{
+color: blue;
+}
+10%{
+color: green;
+}
+20%{
+color: blue;
+}
+30%{
+color: black;
+}
+40%{
+color: violet;
+}
+50%{
+color: pink;
+}
+60%{
+color: skyblue;
+}
+70%{
+color: green;
+}
+80%{
+color: limegreen;
+}
+90%{
+color: yellow;
+}
+100%{
+color: green;
+}
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+</style>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="navbar fixed-top">
+        <div class="container">
+            <img src="portfolio.png" alt="Logo Picture" class="logo-picture">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="portfolio.png" alt="Profile Picture" class="profile-picture">
+        </div>
+    </header>
+
+    <main>
+        <br><br><br><br><br><br><br><br><br>
+        <section class="section">
+            <div class="container">
+                <span  class="btn" onclick="window.history.back();">Click To Go To The Previous Page</span>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>My Name Is N.Ferose Khan.<br><br><br>I Studing <span class="highlight">Bca In Thanthai Periyar Government Arts And Science College Trichy.</span><br><br><br>I Known Some Technical Languages That Are Shown In My Portfolio Section.<br><br><br>I Am Alson Work In A Mid-Scale Corporate Company As A Part Time Worker In The Role Of PHP Full Stack Developer.<br><br><br>I Was Worked In The Company Past 1 Year.<br><br><br>My Company Name Is PAIRSCRIPT.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-item">
+                    <br>
+                    <img src="portfolio.png" alt="Portfolio">
+                    <br>
+                </div>
+                <h3>Front End Known</h3>
+                <ol>
+                    <li style="margin-bottom: 10px;">HTML</li>
+                    <li style="margin-bottom: 10px;">CSS</li>
+                    <li style="margin-bottom: 10px;">JAVASCRIPT</li>
+                </ol>
+                <h3>Back End Known</h3>
+                <ol type="A">
+                    <li style="margin-bottom: 10px;">PHP</li>
+                    <li style="margin-bottom: 10px;">MYSQL</li>
+                    <li style="margin-bottom: 10px;">GIT</li>
+                </ol>
+                <h3>Frame Works Known</h3>
+                <ol type="I">
+                    <li style="margin-bottom: 10px;">BOOTSTRAP</li>
+                    <li style="margin-bottom: 10px;">JQUERY</li>
+                    <li style="margin-bottom: 10px;">AJAX</li>
+                </ol>
+                <h2>Projects</h2>
+                <div class="portfolio-item">
+                    <br>
+                    <a href="https://tasky.pairscript.com/" target="_blank" style="text-decoration: none;" class="highlight">Tasky ( ERP Software )</a>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Details</h2>
+                <p>
+                <a href="mailto:nferosekhan6@gmail.com" style="text-decoration: none;" class="highlight" target="_blank">
+                <svg data-name="Layer 1" height="32" style="position:relative;top: 10px;margin-right: 10px;" id="Layer_1" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M16.58,19.1068l-12.69-8.0757A3,3,0,0,1,7.1109,5.97l9.31,5.9243L24.78,6.0428A3,3,0,0,1,28.22,10.9579Z" fill="#ea4435"/><path d="M25.5,5.5h4a0,0,0,0,1,0,0v18a3,3,0,0,1-,3h0a3,3,0,0,1-3-3V7.5a2,2,0,0,1,2-2Z" fill="#00ac47" transform="translate(53.0001 32.0007) rotate(180)"/><path d="M29.4562,8.0656c-.0088-.06-.0081-.1213-.0206-.1812-.0192-.0918-.0549-.1766-.0823-.2652a2.9312,2.9312,0,0,0-.0958-.2993c-.02-.0475-.0508-.0892-.0735-.1354A2.9838,2.9838,0,0,0,28.9686,6.8c-.04-.0581-.09-.1076-.1342-.1626a3.0282,3.0282,0,0,0-.2455-.2849c-.0665-.0647-.1423-.1188-.2146-.1771a3.02,3.02,0,0,0-.24-.1857c-.0793-.0518-.1661-.0917-.25-.1359-.0884-.0461-.175-.0963-.267-.1331-.0889-.0358-.1837-.0586-.2766-.0859s-.1853-.06-.2807-.0777a3.0543,3.0543,0,0,0-.357-.036c-.0759-.0053-.1511-.0186-.2273-.018a2.9778,2.9778,0,0,0-.4219.0425c-.0563.0084-.113.0077-.1689.0193a33.211,33.211,0,0,0-.5645.178c-.0515.022-.0966.0547-.1465.0795A2.901,2.901,0,0,0,23.5,8.5v5.762l4.72-3.3043a2.8878,2.8878,0,0,0,1.2359-2.8923Z" fill="#ffba00"/><path d="M5.5,5.5h0a3,3,0,0,1,3,3v18a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2V8.5a3,3,0,0,1,3-3Z" fill="#4285f4"/><path d="M2.5439,8.0656c.0088-.06.0081-.1213.0206-.1812.0192-.0918.0549-.1766.0823-.2652A2.9312,2.9312,0,0,1,2.7426,7.32c.02-.0475.0508-.0892.0736-.1354A2.9719,2.9719,0,0,1,3.0316,6.8c.04-.0581.09-.1076.1342-.1626a3.0272,3.0272,0,0,1,.2454-.2849c.0665-.0647.1423-.1188.2147-.1771a3.0005,3.0005,0,0,1,.24-.1857c.0793-.0518.1661-.0917.25-.1359A2.9747,2.9747,0,0,1,4.3829,5.72c.089-.0358.1838-.0586.2766-.0859s.1853-.06.2807-.0777a3.0565,3.0565,0,0,1,.357-.036c.076-.0053.1511-.0186.2273-.018a2.9763,2.9763,0,0,1,.4219.0425c.0563.0084.113.0077.169.0193a2.9056,2.9056,0,0,1,.286.0888,2.9157,2.9157,0,0,1,.2785.0892c.0514.022.0965.0547.1465.0795a2.9745,2.9745,0,0,1,.3742.21A2.9943,2.9943,0,0,1,8.5,8.5v5.762L3.78,10.9579A2.8891,2.8891,0,0,1,2.5439,8.0656Z" fill="#c52528"/></svg>Email
+                </a><br><br><br>
+                <a href="https://api.whatsapp.com/send?phone=8270873279" style="text-decoration: none;" class="highlight" target="_blank">
+                <svg height="32" id="Layer_1" width="32" style="enable-background:new 0 0 1000 1000;position: relative;top: 10px;margin-right: 10px;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css"> .st0{fill:#25D366;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><title/><g><path class="st0" d="M500,1000L500,1000C223.9,1000,0,776.1,0,500v0C0,223.9,223.9,0,500,0h0c276.1,0,500,223.9,500,500v0   C1000,776.1,776.1,1000,500,1000z"/><g><g id="WA_Logo"><g><path class="st1" d="M733.9,267.2c-62-62.1-144.6-96.3-232.5-96.4c-181.1,0-328.6,147.4-328.6,328.6      c0,57.9,15.1,114.5,43.9,164.3L170.1,834l174.2-45.7c48,26.2,102,40,157,40h0.1c0,0,0,0,0,0c181.1,0,328.5-147.4,328.6-328.6      C830.1,411.9,796,329.3,733.9,267.2z M501.5,772.8h-0.1c-49,0-97.1-13.2-139-38.1l-10-5.9L249,755.9l27.6-100.8l-6.5-10.3      c-27.3-43.5-41.8-93.7-41.8-145.4c0.1-150.6,122.6-273.1,273.3-273.1c73,0,141.5,28.5,193.1,80.1c51.6,51.6,80,120.3,79.9,193.2      C774.6,650.3,652,772.8,501.5,772.8z M651.3,568.2c-8.2-4.1-48.6-24-56.1-26.7c-7.5-2.7-13-4.1-18.5,4.1      c-5.5,8.2-21.2,26.7-26,32.2c-4.8,5.5-9.6,6.2-17.8,2.1c-8.2-4.1-34.7-12.8-66-40.8c-24.4-21.8-40.9-48.7-45.7-56.9      c-4.8-8.2-0.5-12.7,3.6-16.8c3.7-3.7,8.2-9.6,12.3-14.4c4.1-4.8,5.5-8.2,8.2-13.7c2.7-5.5,1.4-10.3-0.7-14.4      c-2.1-4.1-18.5-44.5-25.3-61c-6.7-16-13.4-13.8-18.5-14.1c-4.8-0.2-10.3-0.3-15.7-0.3c-5.5,0-14.4,2.1-21.9,10.3      c-7.5,8.2-28.7,28.1-28.7,68.5c0,40.4,29.4,79.5,33.5,84.9c4.1,5.5,57.9,88.4,140.3,124c19.6,8.5,34.9,13.5,46.8,17.3      c19.7,6.3,37.6,5.4,51.7,3.3c15.8-2.4,48.6-19.9,55.4-39c6.8-19.2,6.8-35.6,4.8-39C665,574.4,659.5,572.4,651.3,568.2z"/></g></g></g></g></svg>WhatsApp
+                </a><br><br><br>
+                <a href="tel:6374569225" style="text-decoration: none;" class="highlight" target="_blank">
+                <svg height="32" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd;position: relative;top: 10px;margin-right: 10px;" version="1.1" viewBox="0 0 201 201" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">   <![CDATA[    .fil1 {fill:#FEFEFE}    .fil0 {fill:#2DC100}   ]]>  </style></defs><g id="Layer_x0020_1"><g id="_320501824"><rect class="fil0" height="201" rx="19" ry="19" width="201"/><g><path class="fil1" d="M107 34c37,5 54,23 59,60 0,0 0,0 0,0 0,4 0,8 4,8 4,0 4,-3 4,-6 0,0 0,-1 0,-2 1,-35 -30,-67 -66,-68 -3,0 -9,-2 -9,4 0,4 5,3 8,4z"/><path class="fil1" d="M114 44c-4,-1 -8,-2 -9,2 -1,6 4,5 8,6 23,5 31,13 35,36 0,1 0,2 0,3 0,2 1,5 5,4 2,0 3,-1 3,-3 0,-1 0,-3 0,-4 0,-22 -19,-42 -42,-44z"/><path class="fil1" d="M116 61c-2,0 -5,1 -5,3 -2,4 1,5 4,5 9,2 14,7 15,16 0,2 1,3 1,4 1,0 2,1 4,1 0,0 1,-1 1,-1 2,-1 2,-3 2,-5 0,-11 -12,-23 -22,-23z"/><path class="fil1" d="M164 134c-5,-4 -10,-7 -14,-10 -10,-7 -19,-7 -27,3 -4,6 -9,7 -15,4 -17,-7 -30,-19 -37,-35 -1,-3 -2,-5 -2,-8 -1,-4 1,-8 6,-11 4,-3 8,-6 8,-12 0,-8 -20,-34 -27,-37 -3,-1 -6,-1 -10,0 -18,6 -25,21 -18,38 4,9 9,18 14,26 22,37 54,64 96,81 3,2 6,2 7,3 12,0 26,-11 30,-22 3,-11 -5,-15 -11,-20z"/></g></g></g></svg>Call
+                </a><br><br><br>
+                </p>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br>
+    </main>
+
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <p>&copy; 2023 N.Ferose Khan</p>
+        </div>
+    </footer>
+<script type="text/javascript">
+setTimeout(function() {
+alert("Welcome To My Portfolio Website");
+},1500);
+</script>
+</body>
+</html>
