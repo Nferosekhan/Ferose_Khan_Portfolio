@@ -7,8 +7,8 @@
 	<title>Ferose Khan N | Portfolio</title>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-html
-{scroll-padding-top: 50px;}
+html{
+	scroll-padding-top: 50px;}
   .quote-banner{
   text-align: center;
   padding: 2rem 1rem;
@@ -266,9 +266,10 @@ button {
 		.hero h1 {
 		  font-size: 2.2rem;
 		}
-	 }#scrollToTop {
+	 }
+	 #scrollToTop {
   display: none;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   right:20px;
   z-index: 100;
@@ -298,7 +299,8 @@ style="letter-spacing: 1px;word-spacing: 3px;line-height: 35px;font-family: -app
 	 <a href="#projects" onclick="toggleMenu()">Projects</a>
 	 <a href="#skills" onclick="toggleMenu()">Skills</a>
 	 <a href="#education" onclick="toggleMenu()">Education</a>
-	 <a href="#work" onclick="toggleMenu()">Work</a>
+	 <a href="#work" onclick="toggleMenu()">Experience</a>
+	 <a href="#achievements" onclick="toggleMenu()">Achievements</a>
 	 <a href="#contact" onclick="toggleMenu()">Contact</a>
 	 <button class="toggle-btn" onclick="toggleMode()" style="width: 60px;padding: 10px;">🌙</button>
   </nav>
@@ -309,16 +311,15 @@ style="letter-spacing: 1px;word-spacing: 3px;line-height: 35px;font-family: -app
 </div>
   <section class="hero visible" >
 	 <h1> I'm Ferose <span class="wave">👋</span></h1>
-	 <p>Full Stack Developer | 2.7+ Years Experience</p>
+	 <p>Full Stack Developer</p>
   </section>
   <section id="about" >
-	 <h2 style="text-align: center; text-decoration: underline">About Me</h2>
+	 <h2 style="text-align: center; text-decoration: underline">Professional Summary</h2>
 	 <div class="card" style="text-align: justify;">
-	 <p>Passionate and hands-on Full Stack Developer with real-world
-		experience working part-time with PairScript Pvt Ltd while pursuing academic studies.
-		Proficient in building dynamic ERP and CRM systems with strong skills in PHP, JavaScript,
-		MySQL, and modern frontend frameworks. Adept at problem-solving, UI/UX, and fullcycle
-		project execution. I love building web apps that are fast, responsive, and user-friendly.</p><br>
+	 <p>Results-oriented Full Stack Developer having 3 years of practical knowledge and experience in the development of enterprise-scale web applications and healthcare management systems. Studying MCA, but already working at PairScript Pvt Ltd as a part-time employee, has shown a tremendous capability of handling both academic on one hand and project delivery on the other hand.</p>
+	 <p>Proficient in the development of scalable ERP/CRM solutions, healthcare management software and e-commerce systems with modern technologies such as PHP, JavaScript, React, Jquery and MySQL. Experience and success with the end to end delivery of automation solutions, including concept development, implementation, and system performance and user experience.</p>
+	 <p>Enthusiastic to use technology to solve complex business issues particularly in the areas of healthcare IT, inventory management, and payment integration systems. Committed to writing clean and maintainable code, and remaining updated on the implementation of new technologies in the full-stack development landscape.</p>
+<br>
       <a href="ResumeFeroseKhan.pdf" download class="btn-shine">Download Resume</a>
 	 </div>
   </section>
@@ -326,42 +327,46 @@ style="letter-spacing: 1px;word-spacing: 3px;line-height: 35px;font-family: -app
   <h2 style="text-align: center;text-decoration: underline">Projects</h2>
   <div class="projects-grid">
 	 <div class="card" style="text-align: justify;">
+		<h3>🩺 MediTracker – Health Record & Appointment System</h3>
+		<p>A full-stack, web-based healthcare management system designed to simplify and streamline medical services for patients, doctors, and administrators. Features appointment scheduling, medical record tracking, prescription management, and automated SMS/Email/WhatsApp reminders.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, React, CSS, Bootstrap, JWT, Apache(XAMPP)</p><br>
+		<a href="https://meditracker-demo.example.com/" class="btn-shine" target="_blank">View Project</a>
+	 </div>
+	 <div class="card" style="text-align: justify;">
 		<h3>Tasky – ERP Automation System</h3>
-		<p>A complete ERP software solution for task and inventory management.</p>
-		<p>Tech Stack: PHP, MySQL, JavaScript, React, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://tasky.pairscript.com/"class="btn-shine" target="_blank">View Project</a>
+		<p>A complete ERP software solution for task and inventory management with real-time reporting and automation capabilities.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, React, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>
 	 <div class="card" style="text-align: justify;">
 		<h3>Dr.Civil-Employee Management</h3>
-		<p>Qr code will be generated with details of employee.Once attendance is made by employee, location and personal  details will be verified and matched for work assignment.</p>
-		<p>Tech Stack: PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://drcivil.org/" class="btn-shine" target="_blank">View Project</a>
+		<p>QR code-based employee management system with location verification and automated work assignment features for construction projects.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>
     <div class="card" style="text-align: justify;">
 		<h3>DCTCON Website</h3>
-		<p>DCTCON is a banquet of Scientific knowledge,Networking and Innovation centered around the latest advancements in Diabetes Research and Treatment.</p>
-		<p>Tech Stack: PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://dctcontrichy.com//" class="btn-shine" target="_blank">View Project</a>
+		<p>Professional conference website for Diabetes Care and Treatment conference featuring event management, speaker profiles, and registration system.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>
     <div class="card" style="text-align: justify;">
-		<h3>DCTCON Website-Admin Panel</h3>
-		<p>Registration page for students and practitioners for the upcoming event in July 2025.</p>
-		<p>Created Admin panel to view the registration details along with payment sreenshot.</p>
-		<p>Tech Stack: PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://dctcontrichy.com/adminpanel/index.php//" class="btn-shine" target="_blank">View Project</a>
+		<h3>DCTCON Admin Panel</h3>
+		<p>Comprehensive admin dashboard for managing event registrations, payment verification, and attendee management with real-time analytics.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>
 	 <div class="card" style="text-align: justify;">
-		<h3>PrintClub-Control Panel</h3>
-		<p>Bulk E-mail and individual E-mailing system for sharing information to new and existing dealers regarding login process and offer details.</p>
-		<p>Tech Stack: PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://printclub.online/control/" class="btn-shine" target="_blank">View Project</a>
+		<h3>PrintClub Control Panel</h3>
+		<p>Advanced email management system for automated dealer communications with bulk mailing capabilities and template management.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>  
     <div class="card" style="text-align: justify;">
-		<h3>PrintClub-Dealer Panel</h3>
-		<p>GetePay integration for dealers of PrintClub.
-		Dealers can place their orders through Wallet or UPI.Details of the complete transactions could also be taken easily.
-		Tech Stack: PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
-		<a href="https://printclub.online/deal/login.php" class="btn-shine" target="_blank">View Project</a>
+		<h3>PrintClub Dealer Panel</h3>
+		<p>E-commerce platform with GetePay payment integration supporting wallet and UPI transactions, order management, and transaction tracking.</p>
+		<p><strong>Tech Stack:</strong> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap, jQuery</p><br>
+		<span class="btn-shine" style="background: #666; cursor: not-allowed;">Private Project</span>
 	 </div>  
     </div>
 	</section>
@@ -394,6 +399,15 @@ style="letter-spacing: 1px;word-spacing: 3px;line-height: 35px;font-family: -app
 	 </div>
 	 <div class="skill">
 		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" /><span>Java</span>
+	 </div>
+	 <div class="skill">
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /><span>Node.js</span>
+	 </div>
+	 <div class="skill">
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" style="filter: invert(1);" /><span>Express.js</span>
+	 </div>
+	 <div class="skill">
+		<img src="https://w7.pngwing.com/pngs/399/620/png-transparent-laravel-hd-logo.png" alt="Laravel" /><span>Laravel</span>
 	 </div>
 	  <div class="skill">
 		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="apache" /><span>Apache</span>
@@ -445,6 +459,55 @@ style="letter-spacing: 1px;word-spacing: 3px;line-height: 35px;font-family: -app
 	 <li>Collaborated remotely with teams on real-time client projects ensuring timely delivery and innovation.</li>
   </ul>
 </div>
+
+<div class="card" style="text-align: justify;">
+  	<h3>🎯 Intern <span>— WebOWeb Pte Ltd, Singapore (Jun 2025)</span></h3>
+  	 <ul class="custom-list">
+	 <li>Worked on CMS, DBMS, and UI enhancement projects for international clients.</li>
+	 <li>Gained experience in Java, PHP, React, jQuery, JavaScript, and MySQL technologies.</li>
+	 <li>Contributed to improving user interface design and database optimization.</li>
+  </ul>
+</div>
+
+<div class="card" style="text-align: justify;">
+  	<h3>🚀 Intern <span>— PairScript Pvt Ltd, Trichy (May 2022 – Aug 2022)</span></h3>
+  	 <ul class="custom-list">
+	 <li>Worked on CMS, DBMS and UI enhancement projects as entry-level developer.</li>
+	 <li>Gained foundational experience in PHP, React, jQuery, JavaScript, and MySQL.</li>
+	 <li>Learned industry best practices and professional development methodologies.</li>
+  </ul>
+</div>
+	</section>
+
+	<section id="achievements">
+  	<h2 style="text-align: center;text-decoration: underline">Achievements & Recognition</h2>
+	<div class="card" style="text-align: justify;">
+  	<h3>🏆 Professional Recognition</h3>
+  	 <ul class="custom-list">
+	 <li><strong>Appreciation Letter</strong> – Awarded by PairScript Pvt Ltd for exceptional contribution to the successful implementation of the ERP project "Tasky" over 6 months. Recognized for dedication, expertise, and collaboration.</li>
+  </ul>
+</div>
+
+<div class="card" style="text-align: justify;">
+  	<h3>🥇 Technical Competitions</h3>
+  	 <ul class="custom-list">
+	 <li><strong>Winner</strong> of DEBUGGING in NACO TECH 2K24 at National College Trichy.</li>
+	 <li><strong>Runner-up</strong> in Web Designing at INVOC 2K24, State level tech fest at St.Joseph's College Trichy.</li>
+	 <li><strong>Winner</strong> of Word Hunting in VARIT 2K24 National level Inter-College Technical Symposium at Jamal Mohamed College Trichy.</li>
+  </ul>
+</div>
+
+<div class="card" style="text-align: justify;">
+  	<h3>📜 Certifications & Publications</h3>
+  	 <ul class="custom-list">
+	 <li><strong>Python for Data Science</strong> – NPTEL (Jan-Feb 2025), Score: 57/100</li>
+	 <li><strong>Java Servlet Basics and JSP101</strong> – Certificate Code: 7735812 (January 2025)</li>
+	 <li><strong>PowerBI Workshop</strong> – PSG College of Arts & Science, Certificate ID: AHELL8-CE000068</li>
+	 <li><strong>Introduction to Cyber Security</strong> – Completed on Wingspan Platform (December 2024)</li>
+	 <li><strong>Research Publication:</strong> "A Review of Recent Advances in Natural Language Processing" in International Research Journal of Modernization in Engineering Technology and Science (IRJMETS), Volume 07, Issue 03 – March 2025</li>
+  </ul>
+</div>
+	</section>
 	<section id="contact">
    <h2 style="text-align: center; text-decoration: underline">Contact</h2>
    <div class="contact-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
